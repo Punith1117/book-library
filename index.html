@@ -2,12 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="reset.css"> <!-- reset the default css -->
     <link rel="stylesheet" href="style.css">
     <title>Book-Library</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <div class="sticker">
+            <section class="name">Books</section>
+            <section class="by">by <a href="https://github.com/Punith1117/book-library" title="github source-code">Punith1117</a></section>    
+        </div>
+    </header>
+    <div class="grid-container">
+        <div class="add" title="add book">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9L11.25 11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15L12.75 12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z" fill="#1C274C"/>
+                </svg>
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <div class="title">Halloween in the wind</div>
+                <div class="author">hello there</div>
+                <div class="pages">500</div>
+                <div class="read-delete">
+                    <button class="read">read</button>
+                    <button class="delete"></button>
+                </div>
+            </div>
+            <div class="book-support"></div>
+        </div> 
+        <div class="book-container">
+            <div class="book">
+                <div class="title">Halloween in the wind 2</div>
+                <div class="author">hello there 2</div>
+                <div class="pages">5000</div>
+                <div class="read-delete">
+                    <button class="read">read</button>
+                    <button class="delete"></button>
+                </div>
+            </div>
+            <div class="book-support"></div>
+        </div> 
+    </div>
+    <a href="https://www.vecteezy.com/free-vector/wooden-background" style="position: absolute; top: 0; right: 0; color: rgba(131, 228, 144, 0.973); font-size: max(.8vw, 0.6rem);">Wooden Background Vector by Vecteezy</a>
+    <dialog class="add-book-dialog">
+        <form method="dialog" class="add-book-form">
+            <p class="request">Enter details</p>
+            <div class="input">
+                <label for="input-title">Title: </label>
+                <input type="text" name="input-title" class="input-title" id="input-title" required>
+            </div>
+            <div class="input">
+                <label for="input-author">Author: </label>
+                <input type="text" name="input-author" class="input-author" id="input-author">
+            </div>
+            <div class="input">
+                <label for="input-pages">Number of pages: </label>
+                <input type="number" name="input-pages" class="input-pages" id="input-pages">
+            </div>
+            <div class="read-div">
+                <label for="read">Read:</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <button type="button" class="cancel">cancel</button>
+            <button type="submit" class="submit">submit</button>
+        </form>
+    </dialog>
+    
+    <dialog class="delete-book-dialog">
+    </dialog>
+    <script src="script.js" defer></script>
 </body>
 </html>
